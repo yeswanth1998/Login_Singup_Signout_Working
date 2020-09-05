@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Login Try
+        </title>
+    </head>
+    <body>
+        <input type="text" class="input-field" placeholder="Email Id" id="emailIdLogin"
+                    required>
+        <input type="text" class="input-field" placeholder="Enter the password" id="passwordLogin"
+                    required>
+        <button onclick="LoginBtn()">Login</button>
+        <button onclick="SignupBtn()">Signup</button>
+        <button onclick="SignOut()">SignOut</button>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+		<script>
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+			apiKey: "AIzaSyAa79kl4Oiv6GDhCrjTyPa9XBH7g7HJVT0",
+			authDomain: "skillgradeup-9ccfa.firebaseapp.com",
+			databaseURL: "https://skillgradeup-9ccfa.firebaseio.com",
+			projectId: "skillgradeup-9ccfa",
+			storageBucket: "skillgradeup-9ccfa.appspot.com",
+			messagingSenderId: "803038841668",
+			appId: "1:803038841668:web:28bd7c2ee84349eb7ca511",
+			measurementId: "G-6TB6CQ3V5H"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		</script>
+
+    </body>
+    <script src="Login.js"></script>
+</html>
